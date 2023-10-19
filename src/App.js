@@ -1,16 +1,31 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import StepProgress from './components/progress.js';
+import Form from './components/form.js';
+import ProgressControl from './components/progress-control.js'
+
+function Container({ children, name }) {
+  return (
+    <div className={name +'-container'}>
+      {children}
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      {/* register */}
-      <div class="register-container">
-        <h2>結帳</h2>
+    <Container name='main'>
+      <Container name='register'>
+        <h2 className='register-title'>結帳</h2>
         <StepProgress />
-      </div>
-    </div>
+      </Container>
+      <Container name='form'>
+        <Form />
+      </Container>
+      <Container name='progress-control'>
+        <ProgressControl />
+      </Container>
+    </Container>
   );
 }
 
