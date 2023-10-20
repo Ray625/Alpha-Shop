@@ -1,0 +1,46 @@
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &::after,
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px; 
+    position: absolute;
+    top: 11.5px;
+  }
+  &::after {
+    left: 128px;
+    background-color: var(--black);    
+  }
+  &::before {
+    right: 128px;
+    background-color: var(--pale-gray);
+  }
+}
+
+.progress-icon{
+  margin-right: 8px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 0.5px solid var(--light-gray);
+  color: var(--light-gray);
+  text-align: center;
+  
+  &.action {
+    border: none;
+    background-color: var(--dark-gray);
+    color: var(--white);
+  }
+  
+  &.action + .progress-label {
+    color: var(--dark-gray)
+  }
+}
+
+.progress-label {
+  font-size: var(--progress-font-size);
+}

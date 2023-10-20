@@ -1,9 +1,10 @@
+import '../style/progress.css'
 
-
-function ProgressGroup({step, label}) {
+function ProgressGroup({step, label, action = false}) {
+  
   return (
     <span className="progress-group" data-phase="address">
-      <span className="progress-icon">
+      <span className={(action ? 'action' : '') + ' progress-icon'} >
         <span className="text">{step}</span>
       </span>
       <span className="progress-label">{label}</span>
@@ -13,10 +14,11 @@ function ProgressGroup({step, label}) {
 
 export default function StepProgress() {
   return (
-    <section className="progress-container col col-12">
+    <section className="progress-container">
       <ProgressGroup 
         step="1"
         label="寄送地址"
+        action= {true}
       />
       <ProgressGroup 
         step="2"

@@ -1,29 +1,14 @@
-:root {
-  --dark-gray: #4A4A4A;
-  --title-dark-gray: #2A2A2A;
-  --main-title-size: 32px;
-  --title-size: 24px;
-  --label-size: 12px;
-  --font-bold: 600;
-}
-
 .form-container {
   margin-bottom: 48px;
 }
 
-.register-title {
-  margin-bottom: 32px;
-  font-size: var(--main-title-size);
-  font-weight: var(--font-bold);
-  color: var(--title-dark-gray);
-}
 
 .form-title {
   margin-top: 64px;
   margin-bottom: 24px;
   font-size: var(--title-size);
   font-weight: var(--font-bold);
-  color: var(--title-dark-gray);
+  color: var(--dark-gray);
 }
 
 .form-body {
@@ -52,7 +37,7 @@
   margin-bottom: 8px;
   padding-left: 16px;
   font-size: var(--label-size);
-  border: 1px solid var(--dark-gray);
+  border: 1px solid var(--gray);
   border-radius: 4px;
 }
 
@@ -62,8 +47,8 @@
   width: 100%;
   padding-left: 16px;
   font-size: var(--label-size);
-  color: var(--title-dark-gray);
-  border: 1px solid var(--dark-gray);
+  color: var(--dark-gray);
+  border: 1px solid var(--gray);
   border-radius: 4px;
   position: relative;
   z-index: 1;
@@ -82,7 +67,7 @@
     content: "";
     border-style: solid;
     border-width: 5px 4.5px 0 4.5px;
-    border-color: var(--title-dark-gray) transparent transparent transparent;
+    border-color: var(--dark-gray) transparent transparent transparent;
     position: absolute;
     top: 50%;
     right: 17px;

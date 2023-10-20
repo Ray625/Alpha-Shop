@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './App.css';
+import './style/App.css';
 import StepProgress from './components/progress.js';
 import Form from './components/form.js';
 import ProgressControl from './components/progress-control.js'
