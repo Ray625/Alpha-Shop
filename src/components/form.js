@@ -7,9 +7,9 @@ function SelectInput({title, label, array}) {
 
   return (
     <div className={label + '-input-group input-group'}>
-      <div className="input-label">{title}</div>
+      <label className="input-label" htmlFor={label}>{title}</label>
       <div className="select-container">
-        <select className="select-control" required>
+        <select className="select-control" required id={label}>
           {list}
         </select>
       </div>
@@ -17,11 +17,11 @@ function SelectInput({title, label, array}) {
   )
 }
 
-function DataInput({data, type="text", placeholder, name}) {
+function DataInput({data, type="text", placeholder, label}) {
   return (
-    <div className={name + "-input-group input-group"} >
-      <div className="input-label">{data}</div>
-      <input type={type} placeholder={'請輸入'+placeholder} className="input-control"/>
+    <div className={label + "-input-group input-group"} >
+      <label className="input-label" htmlFor={label}>{data}</label>
+      <input type={type} placeholder={'請輸入'+placeholder} className="input-control" id={label} />
     </div>
   )
 }
@@ -51,7 +51,7 @@ export default function Form() {
           <DataInput 
             data="姓名"
             placeholder="姓名"
-            name="name"
+            label="name"
           />
         </InputCol>
 
@@ -60,13 +60,13 @@ export default function Form() {
             data="電話"
             type="tel"
             placeholder="行動電話"
-            name="tel"
+            label="tel"
             />
           <DataInput 
             data="Email"
             type="email"
             placeholder="電子郵件"
-            name="email"
+            label="email"
             />
         </InputCol>
 
@@ -109,7 +109,7 @@ export default function Form() {
           <DataInput 
             data="地址"
             placeholder="地址"
-            name="address"
+            label="address"
           />
         </InputCol>
       </section>

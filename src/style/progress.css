@@ -42,5 +42,6 @@
 }
 
 .progress-label {
+  color: var(--light-gray);
   font-size: var(--progress-font-size);
 }

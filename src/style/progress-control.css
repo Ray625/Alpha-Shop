@@ -1,0 +1,44 @@
+.button-group {
+  width: 540px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 0.5px solid var(--button-group-border-gray);
+}
+
+.button {
+  width: 174px;
+  height: 46px;
+
+  display:flex;
+  text-align: center;
+  align-items: center;
+  
+  font-size: var(--button-font-size);
+  background-color: var(--white);
+  
+  border: 1px solid transparent;
+  border-radius: 5px;
+  
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    border: 1px solid var(--gray);
+    opacity: 0.9;
+  }
+    
+  &.next-button {
+    justify-content: center;
+    background-color: var(--button-red);
+    color: var(--white);
+  }
+}
+
+.next-cursor-point {
+  margin-left: 12px;
+}
+
+.prev-cursor-point {
+  margin-right: 11px;
+}

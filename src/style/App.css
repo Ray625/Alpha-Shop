@@ -3,17 +3,21 @@
   --pale-gray: #F0F0F5;
   --gray: #4A4A4A;
   --dark-gray: #2A2A2A;
+  --button-group-border-gray: #E6E6EB;
+  --button-red: #f67599;
   --white: #fff;
   --black: #000;
   --main-title-size: 32px;
   --title-size: 24px;
   --progress-font-size: 16px;
+  --button-font-size: 14px;
   --label-size: 12px;
   --font-bold: 700;
 }
 
 * {
   box-sizing: border-box;
+  font-family: ;
 }
 
 h1,h2,h3,h4,h5,h6 {
