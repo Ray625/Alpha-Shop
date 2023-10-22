@@ -1,16 +1,16 @@
 import styles from './step2Form.module.css'
 
-function ShippingInput({title, subtitle, price, bold = false, action = false}) {
+function ShippingInput({title, subtitle, price, action = false}) {
   return (
     <div className={action ? styles.inputGroupAction : styles.inputGroup}>
-      <input type="checkbox" className={styles.shippingInput} />
-      <div className={styles.inputLabel}>
+      <input type="checkbox" className={styles.shippingInput} id={title}/>
+      <label className={styles.inputLabel} htmlFor={title}>
         <div className={styles.inputTitleGroup}>
-          <text className={bold ? styles.inputTitleBold : styles.inputTitle }>{title}</text>
+          <text className={styles.inputTitle}>{title}</text>
           <p className={styles.inputSubtitle}>{subtitle}</p>
         </div>
         <p className={styles.inputLabelPrice}>{price}</p>
-      </div>
+      </label>
     </div>
   )
 }
@@ -20,6 +20,7 @@ export default function Step2Form() {
     <div className="form-container">
       <form>
         <h3 className="form-title">運送方式</h3>
+        <section className='form-body'>
         <ShippingInput 
           title="標準運送"
           subtitle="約 3~7 個工作天 "
@@ -30,8 +31,8 @@ export default function Step2Form() {
           title="DHL 貨運"
           subtitle="48 小時送達 "
           price="$500"
-          bold={true}
-        />
+        />                  
+        </section>
       </form>
     </div>
   )

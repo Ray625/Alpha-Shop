@@ -38,13 +38,22 @@
   color: var(--light-gray);
   text-align: center;
   
-  &.action {
+  &.start {
     border-color: var(--dark-gray);
     background-color: var(--dark-gray);
     color: var(--white);
   }
-  
-  &.action + .progress-label {
+  &.start + .progress-label {
+    color: var(--dark-gray)
+  }
+
+  &.action {
+    border-color: var(--dark-gray);
+    background-color: var(--white);
+    color: var(--dark-gray);
+  }
+
+  &.action+.progress-label {
     color: var(--dark-gray)
   }
 
@@ -53,7 +62,6 @@
     background-image: url(../icons/page-compelet.svg);
     background-size: cover;
   }
-
   &.done + .progress-label {
     color: var(--dark-gray)
   }

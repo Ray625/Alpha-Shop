@@ -6,7 +6,6 @@ function SelectInput({title, label, array, class2}) {
   })
 
   return (
-    // here 
     <div className={styles.inputGroup + class2}>
       <label className={styles.inputLabel} htmlFor={label}>{title}</label>
       <div className={styles.selectContainer}>
@@ -20,7 +19,6 @@ function SelectInput({title, label, array, class2}) {
 
 function DataInput({data, type="text", placeholder, label, class2}) {
   return (
-    // here
     <div className={styles.inputGroup + class2} >
       <label className={styles.inputLabel} htmlFor={label}>{data}</label>
       <input type={type} placeholder={'請輸入'+placeholder} className={styles.inputControl} id={label} />
@@ -41,7 +39,7 @@ export default function Step1Form() {
     <div className='form-container'>
       <form>
         <h3 className='form-title'>寄送地址</h3>
-        <section className={styles.formBody}>
+        <section className='form-body'>
           <InputCol>
             <SelectInput 
             title='稱謂'

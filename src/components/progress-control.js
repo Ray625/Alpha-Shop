@@ -20,6 +20,12 @@ function Button({text, label, image = false}) {
       {text}
     </button>
     )
+  } else {
+    return (
+      <button className={label + ' button'}>
+      {text}
+    </button>
+    )
   }
 }
 
@@ -39,6 +45,15 @@ export default function ProgressControler({step}) {
         <section className="button-group">
           <Button text="上一步" label='prev-button ' image={leftArrow}/>
           <Button text="下一步" label='next-button' image={rightArrow}/>
+        </section>
+      </div>
+    )
+  }else if(step === 3) {
+    return (
+      <div className="progress-control-container">
+        <section className="button-group">
+          <Button text="上一步" label='prev-button ' image={leftArrow}/>
+          <Button text="確認下單" label='next-button' />
         </section>
       </div>
     )

@@ -1,7 +1,8 @@
 import './style/App.css';
-import {Step1Progress, Step2Progress} from './components/progress.js';
+import {Step1Progress, Step2Progress, Step3Progress} from './components/progress.js';
 import Step1Form from './components/stepform/step1Form.js';
 import Step2Form from './components/stepform/step2Form.js';
+import Step3Form from './components/stepform/step3Form.js';
 import ProgressControl from './components/progress-control.js';
 
 function Step1() {
@@ -32,4 +33,18 @@ function Step2() {
   );
 }
 
-export default Step2;
+function Step3() {
+  return (
+    <div className="main-container">
+      <div className="register-container">
+        <h2 className='register-title'>結帳</h2>
+        <Step3Progress />
+        <Step3Form />
+        <ProgressControl 
+          step={3}/>
+      </div>
+    </div>
+  );
+}
+
+export default Step3;

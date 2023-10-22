@@ -1,0 +1,37 @@
+.inputCol {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.inputGroup {
+  width: 100%;
+}
+
+.inputLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-size: var(--label-size);
+}
+
+.inputControl {
+  height: 40px;
+  width: 100%;
+  padding-left: 16px;
+  font-size: var(--label-size);
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+}
+
+:global(.card-name-input-group),
+:global(.card-number-input-group) {
+  grid-column: 1 / 5;
+}
+
+:global(.rexpiry-date-input-group) {
+  grid-column: 1 / 4;
+}
+
+:global(.cvc-input-group) {
+  grid-column: 4 / 7;
+}
