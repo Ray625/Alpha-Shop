@@ -1,0 +1,63 @@
+.inputGroup {
+  width: 80%;
+  height: 60px;
+  margin: 0 0 24px 0 ;
+  padding: 11px 20px;
+  border: 1px solid var(--pale-gray);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.inputGroupAction {
+  composes: inputGroup;
+  border: 1px solid var(--dark-gray);
+}
+
+.shippingInput {
+  margin: 0;
+  padding: 0;
+  margin-right: 20px;
+  appearance: none;
+  width: 22px;
+  height: 20px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 50%;
+  &:checked {
+    box-shadow: inset 0 0 0 5.5px var(--dark-gray);
+  }
+}
+
+.inputLabel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.inputTitleGroup {
+  margin: 0;
+}
+
+.inputTitle {
+  font-size: var(--button-font-size);
+  margin: 0;
+}
+
+.inputTitleBold {
+  font-weight: 700;
+  composes: inputTitle;
+}
+
+.inputSubtitle {
+  font-size: var(--label-size);
+  margin: 0;
+}
+
+.inputLabelPrice {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: var(--label-size);
+}

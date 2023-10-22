@@ -1,3 +1,7 @@
+.progress-control-container {
+  margin-top: 48px;
+}
+
 .button-group {
   width: 540px;
   height: 72px;
@@ -42,3 +46,7 @@
 .prev-cursor-point {
   margin-right: 11px;
 }
+
+.invisible {
+  visibility: hidden;
+} 

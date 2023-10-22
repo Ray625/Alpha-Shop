@@ -1,38 +1,37 @@
-.form-container {
-  margin-bottom: 48px;
+:global(.form-container) {
+  width: 100%;
+  height: 288px;
 }
 
-
-.form-title {
-  margin-top: 64px;
+:global(.form-title) {
   margin-bottom: 24px;
   font-size: var(--title-size);
   font-weight: var(--font-bold);
   color: var(--dark-gray);
 }
 
-.form-body {
+.formBody {
   display: flex;
   flex-direction: column;
 }
 
-.input-col {
+.inputCol {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 30px;
 }
 
-.input-group {
+.inputGroup {
   width: 100%;
 }
 
-.input-label {
+.inputLabel {
   display: block;
   margin-bottom: 8px;
   font-size: var(--label-size);
 }
 
-.input-control {
+.inputControl {
   height: 40px;
   width: 100%;
   margin-bottom: 8px;
@@ -42,7 +41,7 @@
   border-radius: 4px;
 }
 
-.select-control {
+.selectControl {
   appearance: none;
   height: 40px;
   width: 100%;
@@ -62,7 +61,7 @@
   }
 }
 
-.select-container {
+.selectContainer {
   position: relative;
   &::after{
     content: "";
@@ -76,20 +75,20 @@
   }
 }
 
-.title-input-group,
-.city-input-group {
+:global(.title-input-group),
+:global(.city-input-group) {
   grid-column: 1 / 3;
 }
 
-.name-input-group,
-.address-input-group {
+:global(.name-input-group),
+:global(.address-input-group) {
   grid-column: 3 / 7;
 }
 
-.tel-input-group {
+:global(.tel-input-group) {
   grid-column: 1 / 4;
 }
 
-.email-input-group {
+:global(.email-input-group) {
   grid-column: 4 / 7;
 }
