@@ -1,4 +1,4 @@
-import '../style/progress.css'
+import 'style/progress.css'
 
 function ProgressGroup({step, label,start = false, action = false, done = false}) {
   return (

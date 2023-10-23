@@ -1,9 +1,9 @@
-import './style/App.css';
-import {Step1Progress, Step2Progress, Step3Progress} from './components/progress.js';
-import Step1Form from './components/stepform/step1Form.js';
-import Step2Form from './components/stepform/step2Form.js';
-import Step3Form from './components/stepform/step3Form.js';
-import ProgressControl from './components/progress-control.js';
+import 'style/App.css';
+import {Step1Progress, Step2Progress, Step3Progress} from 'components/progress.js';
+import Step1Form from 'components/stepform/step1Form.js';
+import Step2Form from 'components/stepform/step2Form.js';
+import Step3Form from 'components/stepform/step3Form.js';
+import ProgressControl from 'components/progress-control.js';
 
 function Step1() {
   return (

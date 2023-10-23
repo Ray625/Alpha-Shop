@@ -1,6 +1,6 @@
-import rightArrow from '../icons/right-arrow.svg';
-import leftArrow from '../icons/left-arrow.svg';
-import '../style/progress-control.css'
+import rightArrow from 'icons/right-arrow.svg';
+import leftArrow from 'icons/left-arrow.svg';
+import 'style/progress-control.css'
 
 
 function Button({text, label, image = false}) {
